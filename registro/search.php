@@ -40,7 +40,7 @@ $id = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : null;
   </style>
   
 </head>
-<body style="background-color: #005B97;">
+<body style="background-color:  #2439e6">
 
 <div class="container-fluid">
         <div class="row">
@@ -57,7 +57,7 @@ $id = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : null;
           <div  style="width:80%; margin-left:10%; background-color: white; padding:20px; border-radius:10px;">
           <h1 class="text-center">Datos de registro</h1>
           <div style="display: inline-block; width: 50%; margin-left: 25%;">
-          <img src="<?='../admin/modules/registros/'.$registro->getUrlQR(); ?>" style="float:left;" >
+          <img src="<?='../admin/modules/registros/'.$registro->getUrlQR(); ?>" style="width: 30%; float: left;" >
           <h3 style="line-height: 100px;"><?php echo $title ?></h3>
           <button class="btn btn-primary no-print" onclick="window.print()"> <i class="fas fa-file"></i>Imprimir Comprobante</button>
           
@@ -78,10 +78,10 @@ $id = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : null;
           </div>
 
             <div class="form-group">
-            <label for="url_img">Logo del equipo </label>
+            
             <?php    if(isset($_REQUEST['id'])): ?>
               </br>
-            <img src="<?='../admin/modules/registros/'.$registro->getUrlImagen(); ?>" style="width:150px" />
+            <img src="<?='../admin/modules/registros/'.$registro->getUrlImagen(); ?>" style="width:10%; margin-left: 45%;" />
             </br></br>
             <?php endif; ?>
             </div>

@@ -3,25 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Primer Torneo de Robótica y Simposio" />
-    <meta property="og:description" content="CECYBOT 2025 | Unidad Académica Comonfort" />
-    <meta property="og:image" content="https://cecybot2025.com/admin/assets/img/logo.png" />
-    <meta property="og:url" content="https://cecybot2025.com/" />
+    <meta property="og:title" content="Torneo de Robótica y Simposio | CECYTEG Plantel Comonfort" />
+    <meta property="og:description" content="CECYBOT 2026 | CECYTEG Plantel Comonfort" />
+    <meta property="og:image" content="https://cecybot2026.com/admin/assets/img/logo.png" />
+    <meta property="og:url" content="https://cecybot2026.com/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Primer Torneo de Robótica y Simposio" />
-    <meta name="twitter:description" content="CECYBOT 2025 | Unidad Académica Comonfort" />
-    <meta name="twitter:image" content="https://cecybot2025.com/admin/assets/img/logo.png" />
+    <meta name="twitter:title" content="Torneo de Robótica y Simposio CECYTEG Plantel Comonfort" />
+    <meta name="twitter:description" content="CECYBOT 2026 | CECYTEG Plantel Comonfort" />
+    <meta name="twitter:image" content="https://cecybot2026.com/admin/assets/img/logo.png" />
     <title>CECYBOT 2026</title>
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="admin/assets/css/social_bar.css">
+    
     <style>
       /* Estilo del fondo general */
       body {
-        background-color: #005B97;
+        background-color: #2439e6;
       }
 
       /* Estilo del container */
@@ -34,7 +33,7 @@
 
       /* Estilo de la barra de navegación */
       .navbar {
-        background-color: #005B97 !important;
+        background-color: #2439e6 !important;
       }
 
       .navbar .nav-link, .navbar-toggler-icon {
@@ -55,18 +54,18 @@
 
       /* Colores de ejemplo para tarjetas */
       .card:nth-child(1) {
-        background-color: #005B97;
+        background-color: #2439e6;
       }
       .card:nth-child(2) {
-        background-color: #005B97;
+        background-color: #2439e6;
         
       }
       .card:nth-child(3) {
-        background-color: #005B97;
+        background-color: #2439e6;
         
       }
       .card:nth-child(4) {
-        background-color: #005B97;
+        background-color: #2439e6;
         
       }
 
@@ -92,8 +91,11 @@
           justify-content: center;
         }
       }
+
+
     </style>
   </head>
+  
   <body>
     <!-- Modal -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
@@ -104,7 +106,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="admin/assets/img/cartel_cecybot2025.jpg" class="img-fluid" alt="Cartel CECYBOT 2025">
+                    <img src="admin/assets/img/cartel_cecybot.jpg" class="img-fluid" alt="Cartel CECYBOT 2025">
                 </div>
             </div>
         </div>
@@ -144,6 +146,26 @@
   </div>
 </div>
 
+
+<div class="cecybot-sidepanel">
+
+    <a href="https://www.facebook.com/TU_PAGINA" target="_blank" class="panel-item facebook">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+    <span>Facebook</span>
+</a>
+
+    <a href="https://www.instagram.com/TU_USUARIO" target="_blank" class="panel-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+        <span>Instagram</span>
+    </a>
+
+    <a href="https://www.tiktok.com/@TU_USUARIO" target="_blank" class="panel-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+        <span>TikTok</span>
+    </a>
+
+</div>
+
       <div class="container" style="max-width: 90%;">
         <!-- Header -->
         <header class="bg-light py-3 text-center">
@@ -169,7 +191,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
               <li class="nav-item">
-                  <a class="nav-link" href="registro/index.php" target="_blank">¡REGISTRA TU EQUIPO!</a>
+                  <a class="btn btn-warning" href="registro/index.php" target="_blank">¡REGISTRA TU EQUIPO!</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#inicio">Bases de la Competencia</a>
@@ -191,10 +213,10 @@
         <!-- Sección Inicio -->
         <section id="inicio" class="my-5">
           <h2>Bases de la competencia</h2>
-          <p>El CECyTE Guanajuato Unidad Académica COMONFORT tiene la intención de crear y fomentar el interés en el amplio mundo de la robótica y la electrónica en todo el alumnado de nuestro plantel así como a los estudiantes de nuestro municipio y municipios aledaños, por lo que estamos invitándolos a participar el día <span class="font-weight-bold">21 de mayo de 2025 </span> en el Primer Torneo de Robótica y Simposium (CECyBOT Comonfort 2026) </p>
+          <p>El CECyTE Guanajuato Unidad Académica COMONFORT tiene la intención de crear y fomentar el interés en el amplio mundo de la robótica y la electrónica en todo el alumnado de nuestro plantel así como a los estudiantes de nuestro municipio y municipios aledaños, por lo que estamos invitándolos a participar el día <span class="fw-bold">05 de junio de 2026 </span> a la edición anual del Torneo de Robótica y Simposium (CECyBOT Comonfort 2026) </p>
           <div class="text-center">
-  <a href="bases/Bases_CECyBOT_2025.pdf" target="_blank" class="btn btn-secondary btn-lg">
-    <img src="admin/assets/img/bases.png" alt="CECYBOT 2025" width="80" height="80">
+  <a href="bases/Bases_CECyBOT_2026.pdf" target="_blank" class="btn btn-secondary btn-lg">
+    <img src="admin/assets/img/bases.png" alt="CECYBOT 2026" width="80" height="80">
     DESCARGAR LAS BASES DEL EVENTO
   </a>
 </div>       
@@ -242,7 +264,7 @@
           </a>
           </div>
 
-          <div class="col-12 col-md">
+         <!--  <div class="col-12 col-md">
           <a href="https://drive.google.com/file/d/1UsbYQVB_HSbaiKTLMjuZKkNJ7JK8KVt0/view" target="_blank" class="card-link">
             <div class="card">
             <h5 class="card-title" style="padding-top: 20px;">Robot Soccer Amateur</h5>
@@ -252,7 +274,7 @@
               </div>
             </div>
           </a>
-          </div>
+          </div> -->
           <div class="col-12 col-md">
           <a href="https://drive.google.com/file/d/1EEoyfRuiB9q_XBv72y72KZC2qAO541Nq/view" target="_blank" class="card-link">
             <div class="card">
@@ -290,10 +312,19 @@
           <div class="col-12 col-md-4 text-center">
             <div style="margin-top: 20px;">
             <h4>Salón Quinta Caporales, Comonfort, Guanajuato.</h4>
-            <h5>21 de Mayo de 2025</h5>
-            <p class="fw-bold">Arranque del evento y registro: 8:00am - 10:00am</p>
+            <hr>
+            <br>
+           <h5> Simposium y exihibición de robótica </h5>
+            <h5>04 de junio de 2026 10:00 am</h5>
+             <p class="fw-bold">Hora de inicio: 10:00am</p>
+
+            <hr>
+            <h5> ¡Torneo de Robótica! </h5>
+            <h5>05 de junio de 2026</h5>
+            <p class="fw-bold">Arranque del evento y registro: 8:00am</p>
+            <hr>
             </div>
-            <img src="admin/assets/img/location.png" style="width: 20%; height: auto;">
+            <!-- <img src="admin/assets/img/location.png" style="width: 20%; height: auto;"> -->
           </div>
         </div>
 
@@ -309,7 +340,7 @@
 
         <!-- Footer -->
         <footer class="bg-dark text-white text-center py-3 mt-4">
-          <p>&copy; 2026 Segundo Torneo de Robótica y Simposio. CECYBOT 2026</p>
+          <p>&copy; 2026 Torneo de Robótica y Simposio. CECYBOT 2026</p>
           <p> CECYTEG Unidad Académica Comonfort. Todos los derechos reservados.</p>
         </footer>
       

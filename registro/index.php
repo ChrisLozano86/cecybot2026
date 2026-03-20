@@ -53,6 +53,9 @@ $registro = new Registro();
         th {
             background-color: #f2f2f2;
         }
+        .oculto {
+    display: none;
+}
   </style>
 
 </head>
@@ -82,7 +85,7 @@ document.getElementById('otraInstitucion').style.display = 'block';//si no lo vo
 </script>
 
 
-<body style="background-color: #005B97;">
+<body style="background-color:  #2439e6;">
 
 <div id="loader">
     <img src="https://i.gifer.com/ZZ5H.gif" alt="Cargando..."> <br>
@@ -117,30 +120,17 @@ Si se realiza una transferencia electrónica de otro banco, deberá subir el com
 
 <p> <strong>Nombre del destinatario:</strong> Caja Popular Dr. José Ma. Luis Mora</p>
 
-<p> * En el concepto o motivo de pago coloca el <strong>"Nombre de tu equipo"</strong>  que con el que será registrado.</p>
+<p> <span style="color: red; font-weight: bold;"> * Importante: </span> En el concepto o motivo de pago favor de colocar el <strong>"Nombre de tu equipo"</strong>  que con el que será registrado.</p>
 
- <p> <span class="font-weight-bold">Cuota de Inscripción: </span></p>
+ <p> </p>
 
  <table>
         <tr>
-            <th>Seguidores de Línea y Mini Sumo</th>
-            <th>Robot Soccer</th>
+            <th><span class="font-weight-bold">Cuota de Inscripción: </span></th>
+           
         </tr>
         <tr>
-            <td>$100.00 MXN (hasta el día 11 de abril de 2025)</td>
-            <td>$200.00 MXN (hasta el día 11 de abril de 2025)</td>
-        </tr>
-        <tr>
-            <td>$200.00 MXN (hasta el día 25 de abril de 2025)</td>
-            <td>$300.00 MXN (hasta el día 25 de abril de 2025)</td>
-        </tr>
-        <tr>
-            <td>$300.00 MXN (hasta el día 09 de mayo de 2025)</td>
-            <td>$400.00 MXN (hasta el día 09 de mayo de 2025)</td>
-        </tr>
-        <tr>
-            <td>$400.00 MXN (hasta el día 15 de mayo de 2025)</td>
-            <td>$500.00 MXN (hasta el día 15 de mayo de 2025)</td>
+            <td>$250.00 MXN</td> 
         </tr>
         
     </table>
@@ -159,10 +149,10 @@ Si se realiza una transferencia electrónica de otro banco, deberá subir el com
           </div>
 
             <div class="form-group">
-            <label for="url_img">Logo del equipo </label><br>
-            <small>Sube el logo de tu equipo en formato de imagen JPG, JPEG, PNG, con peso menor a 5MB. (Opcional) </small>
-            <input type="file" class="form-control-file" name="url_img" id="url_img">
-            <small class="text-danger error-message" id="error-url_img"></small>
+            <!-- label for="url_img">Logo del equipo </label><br>
+            <small>Sube el logo de tu equipo en formato de imagen JPG, JPEG, PNG, con peso menor a 5MB. (Opcional) </small> -->
+            <input type="file" class="form-control-file oculto" name="url_img" id="url_img">
+            <!-- <small class="text-danger error-message" id="error-url_img"></small>  -->
             </div>
             <div class="form-group">
             <label for="titulo">Nombre del equipo <span class="text text-danger">*</span></label>
@@ -182,7 +172,7 @@ Si se realiza una transferencia electrónica de otro banco, deberá subir el com
             <option value="">Selecciona una categoría</option>
               <option value="MINI SUMO RC">Mini Sumo RC Profesional</option>
               <option value="ROBOT SOCCER PROFESIONAL">Robot Soccer Profesional</option>
-              <option value="ROBOT SOCCER AMATEUR">Robot Soccer Amateur</option>
+              <!-- <option value="ROBOT SOCCER AMATEUR">Robot Soccer Amateur</option> -->
               <option value="SEGUIDOR DE LINEA EDUCATIVO">Seguidor de Línea (Kit Educativo)</option>
               <option value="SEGUIDOR DE LINEA AMATEUR">Seguidor de Línea Amateur</option>
             </select> 
