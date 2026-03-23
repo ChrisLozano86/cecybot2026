@@ -215,7 +215,7 @@
           <h2>Bases de la competencia</h2>
           <p>El CECyTE Guanajuato Unidad Académica COMONFORT tiene la intención de crear y fomentar el interés en el amplio mundo de la robótica y la electrónica en todo el alumnado de nuestro plantel así como a los estudiantes de nuestro municipio y municipios aledaños, por lo que estamos invitándolos a participar el día <span class="fw-bold">05 de junio de 2026 </span> a la edición anual del Torneo de Robótica y Simposium (CECyBOT Comonfort 2026) </p>
           <div class="text-center">
-  <a href="bases/Bases_CECyBOT_2026.pdf" target="_blank" class="btn btn-secondary btn-lg">
+  <a href="#" target="_blank" class="btn btn-secondary btn-lg">
     <img src="admin/assets/img/bases.png" alt="CECYBOT 2026" width="80" height="80">
     DESCARGAR LAS BASES DEL EVENTO
   </a>
@@ -241,7 +241,7 @@
         <!-- Tarjetas en columnas -->
         <div class="row text-center my-4">
           <div class="col-12 col-md">
-          <a href="https://drive.google.com/file/d/1QEXc7tQGrC-peanF4aSkV65wtIM1prSY/view" target="_blank" class="card-link">
+          <a href="#" target="_blank" class="card-link">
             <div class="card">
             <h5 class="card-title" style="padding-top: 20px;">Mini Sumo RC Profesional</h5>
               <img src="admin/assets/img/mini_sumo.png" class="card-img-top" alt="Mini Sumo RC" style="width: 80%; margin-left: 10%;"></a>
@@ -253,7 +253,7 @@
             </div>
           </div>
           <div class="col-12 col-md">
-          <a href="https://drive.google.com/file/d/17jHjUKhDH9pfBwyzb1BbjtGh-0DBAvrl/view" target="_blank" class="card-link">
+          <a href="#" target="_blank" class="card-link">
             <div class="card">
             <h5 class="card-title" style="padding-top: 20px;">Robot Soccer Profesional</h5>
               <img src="admin/assets/img/robot_soccer_pro.png" class="card-img-top" alt="Robot Soccer" style="width: 80%; margin-left: 10%;">
@@ -276,7 +276,7 @@
           </a>
           </div> -->
           <div class="col-12 col-md">
-          <a href="https://drive.google.com/file/d/1EEoyfRuiB9q_XBv72y72KZC2qAO541Nq/view" target="_blank" class="card-link">
+          <a href="#" target="_blank" class="card-link">
             <div class="card">
             <h5 class="card-title" style="padding-top: 20px;">Seguidor de Línea (Kit Educativo)</h5>
               <img src="admin/assets/img/seguidor_educativo.png" class="card-img-top" alt="Seguidor Línea Educativo" style="width: 70%; margin-left: 15%;">
@@ -287,7 +287,7 @@
           </a>
           </div>
           <div class="col-12 col-md">
-          <a href="https://drive.google.com/file/d/1I7c61QB3BxR--IVjRExXDu0MG0wPDhj9/view?usp=drive_link" target="_blank" class="card-link">
+          <a href="#" target="_blank" class="card-link">
             <div class="card">
             <h5 class="card-title" style="padding-top: 20px;">Seguidor de Línea Amateur</h5>
               <img src="admin/assets/img/seguidor_pro.png" class="card-img-top" alt="Seguidor Linea Amateur" style="width: 80%; margin-left: 10%;">
