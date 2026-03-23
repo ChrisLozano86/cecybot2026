@@ -114,11 +114,11 @@ Si se realiza una transferencia electrónica de otro banco, deberá subir el com
 
 <p><strong>Banco:</strong> BBVA Bancomer</p>
 
-<p><strong>No. de cuenta:</strong> 010 823 4469</p>
+<p><strong>No. de cuenta:</strong> <!-- 010 823 4469 --> Pendiente </p>
 
-<p><strong>CLABE Interbancaria:</strong> 0122 1500 1082 3446 92</p>
+<p><strong>CLABE Interbancaria:</strong> <!-- 0122 1500 1082 3446 92 --> Pendiente </p>
 
-<p> <strong>Nombre del destinatario:</strong> Caja Popular Dr. José Ma. Luis Mora</p>
+<p> <strong>Nombre del destinatario:</strong> <!-- Caja Popular Dr. José Ma. Luis Mora --> Pendiente</p>
 
 <p> <span style="color: red; font-weight: bold;"> * Importante: </span> En el concepto o motivo de pago favor de colocar el <strong>"Nombre de tu equipo"</strong>  que con el que será registrado.</p>
 
