@@ -215,7 +215,7 @@
           <h2>Bases de la competencia</h2>
           <p>El CECyTE Guanajuato Unidad Académica COMONFORT tiene la intención de crear y fomentar el interés en el amplio mundo de la robótica y la electrónica en todo el alumnado de nuestro plantel así como a los estudiantes de nuestro municipio y municipios aledaños, por lo que estamos invitándolos a participar el día <span class="fw-bold">05 de junio de 2026 </span> a la edición anual del Torneo de Robótica y Simposium (CECyBOT Comonfort 2026) </p>
           <div class="text-center">
-  <a href="#" target="_blank" class="btn btn-secondary btn-lg">
+  <a href="#" target="_blank" class="btn btn-primary btn-lg">
     <img src="admin/assets/img/bases.png" alt="CECYBOT 2026" width="80" height="80">
     DESCARGAR LAS BASES DEL EVENTO
   </a>
@@ -226,7 +226,7 @@
       <section class="hero-section">
         <h2>¿Estás listo para el reto?</h2>
         <img src="admin/assets/img/logo.png" alt="CECYBOT 2025" style="width: 20%;">
-        <a href="registro/index.php" class="btn btn-primary btn-lg">REGISTRAR EQUIPO</a>
+        <a href="registro/index.php" class="btn btn-primary btn-lg">¡REGISTRAR TU EQUIPO!</a>
         <br>
      <a href="#" class="btn btn-warning btn-la" data-bs-toggle="modal" data-bs-target="#modalRecuperar">RECUPERAR COMPROBANTE DE REGISTRO</a>
       </section>

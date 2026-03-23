@@ -2,7 +2,7 @@
 require_once '../../class/Registro.php';
 header("Content-Type: application/xls");
 header("Content-Type: application/vnd.ms-excel; charset=UTF-8");
-header("Content-Disposition: attachment; filename= CECYBOT2025.xls");
+header("Content-Disposition: attachment; filename= CECYBOT2026.xls");
 $registros = Registro::recuperarTodos(); 
 ?>
 
@@ -10,7 +10,7 @@ $registros = Registro::recuperarTodos();
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CECYBOT 2025</title>
+    <title>CECYBOT 2026</title>
 </head>
 <body>
 <table border="1">

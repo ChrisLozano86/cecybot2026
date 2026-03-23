@@ -22,7 +22,7 @@ include_once '../../assets/template/header.php';
               
               if (count($registros) > 0): ?>
               <a href="report.php" class="btn btn-default btn-custom"> <i class="fas fa-file-excel"></i> Descargar Excel </a>
-              <a href="download_logos.php" class="btn btn-default btn-custom"> <i class="fas fa-image"></i> Descargar Logos </a>
+            <!--   <a href="download_logos.php" class="btn btn-default btn-custom"> <i class="fas fa-image"></i> Descargar Logos </a> -->
               <a href="download_tickets.php" class="btn btn-default btn-custom"> <i class="fas fa-file"></i> Descargar Comprobantes </a><br><br>
           
               <hr>
@@ -32,7 +32,6 @@ include_once '../../assets/template/header.php';
 
                 <p>Mini sumo RC: <strong><?php echo count($minisumo_rc); ?></strong> </p>
                 <p>Robot Soccer Profesional: <strong><?php echo count($robot_soccer_pro) ?></strong> </p>
-                <p>Robot Soccer Amateur: <strong><?php echo count($robot_soccer_amateur) ?></strong> </p>
                 <p>Seguidor de Línea Educativo: <strong><?php echo count($seguidor_educativo) ?></strong> </p>
                 <p>Seguidor de Línea Amateur: <strong><?php echo count($seguidor_amateur) ?></strong> </p>
               </div>
@@ -43,7 +42,7 @@ include_once '../../assets/template/header.php';
   <thead class="thead-dark">
     <tr class="text-center">
     
-    <th scope="col">Logo</th>
+   <!--  <th scope="col">Logo</th> -->
       <th scope="col">Equipo</th>
       <th scope="col">Coach</th>
       <th scope="col">Categoría</th>
@@ -62,7 +61,7 @@ include_once '../../assets/template/header.php';
 
  
     <tr>  
-      <td> <img src="<?php echo $item['url_imagen']; ?>" width="120" height="150"></td>
+      <!-- <td> <img src="<?php //echo $item['url_imagen']; ?>" width="120" height="150"></td> -->
       <td><?php echo $item['nombre_equipo']; ?></td>
       <td><?php echo $item['coach']; ?></td>
       <td><?php echo $item['categoria']; ?></td>
