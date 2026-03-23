@@ -15,6 +15,7 @@ $registro = new Registro();
 <script src="../admin/assets/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <style>
     /* Estilo del overlay del loader */
@@ -235,6 +236,10 @@ Si se realiza una transferencia electrónica de otro banco, deberá subir el com
             <small> Sube tu comprobante de pago o transferencia, puede ser una foto de buena calidad o captura de pantalla en formato JPG, JPEG, PNG, o archivo en formato PDF. (Peso máximo 5MB.) </small>
             <input type="file" class="form-control-file" name="url_pago" id="url_pago">
             <small class="text-danger error-message" id="error-url_pago"></small>
+            </div>
+
+            <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6LdwAJUsAAAAAB04pyZc03uIbZE5wILE4cpLb0uT"></div>
             </div>
 
             <div class="form-group">

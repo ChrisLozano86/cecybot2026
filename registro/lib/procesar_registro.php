@@ -6,6 +6,23 @@ $generator = new barcode_generator();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
+
+$secretKey = "6LdwAJUsAAAAAMRtxHJO_jUBluxzbyu73BNqK0oX";
+$responseKey = $_POST['g-recaptcha-response'];
+$userIP = $_SERVER['REMOTE_ADDR'];
+
+$verify = file_get_contents(
+    "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP"
+);
+
+$response = json_decode($verify);
+
+if (!$response->success) {
+    die("Por favor verifica que no eres un robot.");
+}
+
+
+
 $nombre_equipo = (isset($_POST['nombre_equipo'])) ? $_POST['nombre_equipo'] : null;
 $url_imagen1 = (isset($_REQUEST['url_imagen1'])) ? $_REQUEST['url_imagen1'] : null;  
 $url_imagen2 = (isset($_REQUEST['url_imagen2'])) ? $_REQUEST['url_imagen2'] : null;      
