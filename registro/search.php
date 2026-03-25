@@ -81,7 +81,7 @@ $id = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : null;
             
             <?php    if(isset($_REQUEST['id'])): ?>
               </br>
-            <img src="<?='../admin/modules/registros/'.$registro->getUrlImagen(); ?>" style="width:30%; margin-left: 35%;" />
+            <img src="<?='../admin/modules/registros/'.$registro->getUrlImagen(); ?>" style="width:20%; margin-left: 40%;" />
             </br></br>
             <?php endif; ?>
             </div>
