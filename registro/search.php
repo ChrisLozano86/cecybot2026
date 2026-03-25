@@ -57,7 +57,7 @@ $id = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : null;
           <div  style="width:80%; margin-left:10%; background-color: white; padding:20px; border-radius:10px;">
           <h1 class="text-center">Datos de registro</h1>
           <div style="display: inline-block; width: 50%; margin-left: 25%;">
-          <img src="<?='../admin/modules/registros/'.$registro->getUrlQR(); ?>" style="width: 30%; float: left;" >
+          <img src="<?='../admin/modules/registros/'.$registro->getUrlQR(); ?>" width="150" height="150" style="float: left;" >
           <h3 style="line-height: 100px;"><?php echo $title ?></h3>
           <button class="btn btn-primary no-print" onclick="window.print()"> <i class="fas fa-file"></i>Imprimir Comprobante</button>
           
