@@ -8,6 +8,16 @@ $registro = new Registro();
 	<title>Registro | CECYBOT 2026</title>
 	  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Torneo de Robótica y Simposio | CECYTEG Plantel Comonfort" />
+    <meta property="og:description" content="REGISTRO CECYBOT 2026, ¿Estás listo para el reto?" />
+    <meta property="og:image" content="https://cecybot2026.com/admin/assets/img/logo.png" />
+    <meta property="og:url" content="https://cecybot2026.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="REGISTRO Torneo de Robótica y Simposio CECYTEG Plantel Comonfort" />
+    <meta name="twitter:description" content="REGISTRO CECYBOT 2026, ¿Estás listo para el reto?" />
+    <meta name="twitter:image" content="https://cecybot2026.com/admin/assets/img/logo.png" />
+    
    <!-- Theme style -->
    <link rel="stylesheet" href="../admin/assets/css/adminlte.css">
    

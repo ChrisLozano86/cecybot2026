@@ -70,7 +70,7 @@ include_once '../../assets/template/header.php';
       <td><?php echo $item['tel']; ?></td>
       <td class="text-center"><a href="<?php echo $item['url_comprobante']; ?>" target="_blank" class="btn btn-success fas fa-check-square"></a></td>
       <td><?php echo date("d/m/Y", strtotime($item['fecha_registro'])); ?></td>
-      <td><a href="../../../registro/search.php?id=<?php echo $item[0]; ?>" class="btn btn-info btn-lg" target="_blank"> QR</a></td>
+      <td><a href="../../../registro/search.php?id=<?php echo $item[0]; ?>" class="btn btn-warning fa-file-alt" target="_blank"></a></td>
       <?php if (isset($_SESSION['idRol']) && $_SESSION['idRol'] == 1) {?>
       <td class="text-center"><a href="save.php?id=<?php echo $item[0];?>" class="btn btn-info fas fa-edit"></a></td>
       <td class="text-center"><a href="delete.php?id=<?php echo $item[0];?>" onclick="return confirm('¿Está seguro que desea eliminar el registro de este equipo?')" class="btn btn-danger far fa-trash-alt"></a></td> 
