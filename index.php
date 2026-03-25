@@ -116,7 +116,8 @@
     <div class="modal-content">
       
       <div class="modal-header">
-        <h5 class="modal-title" id="modalRecuperarLabel">Recuperar comprobante</h5>
+        <h5 class="modal-title" id="modalRecuperarLabel">Recuperar comprobante de registro</h5>
+        <p>Ingresa el correo electrónico con el que registraste tu equipo para recuperar el comprobante de registro, si tienes dudas contactanos al correo electrónico jose.cervantesr@cecyteg.edu.mx o christian.lozanoh@cecyteg.edu.mx</p>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       
@@ -149,7 +150,7 @@
 
 <div class="cecybot-sidepanel">
 
-    <a href="https://www.facebook.com/TU_PAGINA" target="_blank" class="panel-item facebook">
+    <a href="https://www.facebook.com/profile.php?id=100033536035633" target="_blank" class="panel-item facebook">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
     <span>Facebook</span>
 </a>

@@ -59,7 +59,7 @@ $id = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : null;
           <div style="display: inline-block; width: 50%; margin-left: 25%;">
           <img src="<?='../admin/modules/registros/'.$registro->getUrlQR(); ?>" width="150" height="150" style="float: left;" >
           <h3 style="line-height: 100px;"><?php echo $title ?></h3>
-          <button class="btn btn-primary no-print" onclick="window.print()"> <i class="fas fa-file"></i>Imprimir Comprobante</button>
+          <button class="btn btn-primary no-print" onclick="window.print()"> <i class="fas fa-file"></i>Guardar o Imprimir Comprobante</button>
           
           </div>
            <br>
@@ -81,7 +81,7 @@ $id = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : null;
             
             <?php    if(isset($_REQUEST['id'])): ?>
               </br>
-            <img src="<?='../admin/modules/registros/'.$registro->getUrlImagen(); ?>" style="width:10%; margin-left: 45%;" />
+            <img src="<?='../admin/modules/registros/'.$registro->getUrlImagen(); ?>" style="width:30%; margin-left: 35%;" />
             </br></br>
             <?php endif; ?>
             </div>
