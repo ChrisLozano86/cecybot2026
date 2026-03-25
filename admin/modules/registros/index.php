@@ -23,7 +23,7 @@ include_once '../../assets/template/header.php';
               if (count($registros) > 0): ?>
               <a href="report.php" class="btn btn-default btn-custom"> <i class="fas fa-file-excel"></i> Descargar Excel </a>
             <!--   <a href="download_logos.php" class="btn btn-default btn-custom"> <i class="fas fa-image"></i> Descargar Logos </a> -->
-              <a href="download_tickets.php" class="btn btn-default btn-custom"> <i class="fas fa-file"></i> Descargar Comprobantes </a><br><br>
+            <!-- <a href="download_tickets.php" class="btn btn-default btn-custom"> <i class="fas fa-file"></i> Descargar Comprobantes de pago </a><br><br> -->
           
               <hr>
               <p> <strong>TOTAL DE EQUIPOS INSCRITOS: &nbsp;<?php echo count($registros) ?></strong> </p>
@@ -50,7 +50,7 @@ include_once '../../assets/template/header.php';
       <th scope="col">Teléfono</th>
       <th scope="col">Comprobante Pago</th>
       <th scope="col">Fecha de registro</th>
-      <th scope="col">Comprobante QR</th>
+      <th scope="col">Comprobante de registro QR</th>
       <th scope="col">Ver detalles</th>
       <?php if (isset($_SESSION['idRol']) && $_SESSION['idRol'] == 1) {?>
       <th scope="col">Eliminar</th>
@@ -70,7 +70,7 @@ include_once '../../assets/template/header.php';
       <td><?php echo $item['tel']; ?></td>
       <td class="text-center"><a href="<?php echo $item['url_comprobante']; ?>" target="_blank" class="btn btn-success fas fa-check-square"></a></td>
       <td><?php echo date("d/m/Y", strtotime($item['fecha_registro'])); ?></td>
-      <td  class="text-center"><a href="../../../registro/search.php?id=<?php echo $item[0]; ?>" class="btn btn-warning fas fa-file" target="_blank"></a></td>
+      <td  class="text-center"><a href="../../../registro/search.php?id=<?php echo $item[0]; ?>" class="btn btn-primary fas fa-file" target="_blank"></a></td>
       <?php if (isset($_SESSION['idRol']) && $_SESSION['idRol'] == 1) {?>
       <td class="text-center"><a href="save.php?id=<?php echo $item[0];?>" class="btn btn-info fas fa-edit"></a></td>
       <td class="text-center"><a href="delete.php?id=<?php echo $item[0];?>" onclick="return confirm('¿Está seguro que desea eliminar el registro de este equipo?')" class="btn btn-danger far fa-trash-alt"></a></td> 
