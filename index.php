@@ -16,6 +16,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="admin/assets/css/social_bar.css">
+    <link rel="icon" type="image/png" href="admin/assets/img/favicon.png">
     
     <style>
       /* Estilo del fondo general */

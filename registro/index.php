@@ -17,6 +17,7 @@ $registro = new Registro();
     <meta name="twitter:title" content="REGISTRO Torneo de Robótica y Simposio CECYTEG Plantel Comonfort" />
     <meta name="twitter:description" content="REGISTRO CECYBOT 2026, ¿Estás listo para el reto?" />
     <meta name="twitter:image" content="https://cecybot2026.com/admin/assets/img/logo.png" />
+    <link rel="icon" href="../admin/assets/img/favicon.ico" type="image/x-icon">
     
    <!-- Theme style -->
    <link rel="stylesheet" href="../admin/assets/css/adminlte.css">
