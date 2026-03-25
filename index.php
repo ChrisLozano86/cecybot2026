@@ -227,7 +227,7 @@
       <section class="hero-section">
         <h2>¿Estás listo para el reto?</h2>
         <img src="admin/assets/img/logo.png" alt="CECYBOT 2026" style="width: 20%;">
-        <a href="registro/index.php" class="btn btn-primary btn-lg">¡REGISTRAR TU EQUIPO!</a>
+        <a href="registro/index.php" class="btn btn-primary btn-lg" style="margin-top: 20px; margin-bottom: 20px;">¡REGISTRAR TU EQUIPO!</a>
         <br>
      <a href="#" class="btn btn-warning btn-la" data-bs-toggle="modal" data-bs-target="#modalRecuperar">RECUPERAR COMPROBANTE DE REGISTRO</a>
       </section>
