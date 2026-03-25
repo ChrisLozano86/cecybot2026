@@ -117,10 +117,9 @@
       
       <div class="modal-header">
         <h5 class="modal-title" id="modalRecuperarLabel">Recuperar comprobante de registro</h5>
-        <p>Ingresa el correo electrónico con el que registraste tu equipo para recuperar el comprobante de registro, si tienes dudas contactanos al correo electrónico jose.cervantesr@cecyteg.edu.mx o christian.lozanoh@cecyteg.edu.mx</p>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
-      
+      <p>Ingresa el correo electrónico con el que registraste tu equipo para recuperar el comprobante de registro, si tienes dudas contactanos al correo electrónico jose.cervantesr@cecyteg.edu.mx o christian.lozanoh@cecyteg.edu.mx</p>
       <form action="registro/recuperar_comprobante.php" method="POST">
         <div class="modal-body">
           
