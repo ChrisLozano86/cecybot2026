@@ -146,7 +146,7 @@ document.getElementById('otraInstitucion').style.display = 'block';//si no lo vo
 </div>
       <hr>
           
-            <form action="lib/verificar_inscripcion.php" method="post" id="formQR">
+            <form action="../lib/verificar_inscripcion.php" method="post" id="formQR">
 
             
            
