@@ -253,7 +253,7 @@ class Registro {
 
     public static function recuperarTodos() {
         $conexion = new Conexion();
-        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA);
+        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA. ' ORDER BY id ASC');
         $consulta->execute();
         $registros = $consulta->fetchAll();
   
