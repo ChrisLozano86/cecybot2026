@@ -253,7 +253,7 @@ class Registro {
 
     public static function recuperarTodos() {
         $conexion = new Conexion();
-        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA. ' ORDER BY fecha_registro DESC');
+        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA);
         $consulta->execute();
         $registros = $consulta->fetchAll();
   
