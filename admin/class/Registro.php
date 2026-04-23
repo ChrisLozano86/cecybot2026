@@ -18,6 +18,7 @@ class Registro {
     private $url_comprobante;
     private $url_qr;
     private $fecha_registro;
+    private $verificado;
     
     
     
@@ -26,7 +27,7 @@ class Registro {
     
   
     
-    public function __construct($nombre_equipo=null, $coach=null,  $integrante1=null, $integrante2=null, $integrante3=null, $integrante4=null, $categoria=null, $institucion=null, $email=null, $tel=null, $url_imagen=null, $url_comprobante=null, $url_qr=null, $fecha_registro=null,  $id=null) {
+    public function __construct($nombre_equipo=null, $coach=null,  $integrante1=null, $integrante2=null, $integrante3=null, $integrante4=null, $categoria=null, $institucion=null, $email=null, $tel=null, $url_imagen=null, $url_comprobante=null, $url_qr=null, $fecha_registro=null, $verificado=null,  $id=null) {
        
         $this->nombre_equipo = $nombre_equipo;
         $this->coach = $coach;
@@ -42,6 +43,7 @@ class Registro {
         $this->url_comprobante = $url_comprobante;
         $this->url_qr = $url_qr;
         $this->fecha_registro = $fecha_registro;
+        $this->verificado = $verificado;
         $this->id = $id;
         
 
@@ -111,6 +113,10 @@ class Registro {
         return $this->fecha_registro;
     }
 
+     public function getVerificado() {
+        return $this->verificado;
+    }
+
     //Setters
 
     public function setCoach($coach) {
@@ -168,7 +174,10 @@ class Registro {
     $this->fecha_registro = $fecha_registro;
    } 
     
-   
+    public function setVerificado($verificado) {
+        $this->verificado = $verificado;
+    }
+
 
   
 
@@ -241,7 +250,7 @@ class Registro {
         $conexion = null;
         if ($registro) {
            
-            return new self($registro['nombre_equipo'], $registro['coach'], $registro['integrante1'],  $registro['integrante2'], $registro['integrante3'], $registro['integrante4'], $registro['categoria'], $registro['institucion'], $registro['email'], $registro['tel'], $registro['url_imagen'], $registro['url_comprobante'], $registro['url_qr'], $registro['fecha_registro'], $registro['id']);
+            return new self($registro['nombre_equipo'], $registro['coach'], $registro['integrante1'],  $registro['integrante2'], $registro['integrante3'], $registro['integrante4'], $registro['categoria'], $registro['institucion'], $registro['email'], $registro['tel'], $registro['url_imagen'], $registro['url_comprobante'], $registro['url_qr'], $registro['fecha_registro'], $registro['verificado'], $registro['id']);
             
         } else {
             return false;
@@ -293,6 +302,16 @@ class Registro {
   
         $conexion = null;
         return $registros;
+    }
+
+    public function checkin(){
+        
+        $conexion = new Conexion();
+        $consulta = $conexion->prepare('UPDATE ' . self::TABLA . ' SET verificado = :verificado  WHERE id = :url_qr');
+        $consulta->bindParam(':url_qr', $this->url_qr);
+         $consulta->bindParam(':verificado', $this->verificado);
+        $consulta->execute();
+        $conexion = null;
     }
 
 

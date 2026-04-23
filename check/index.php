@@ -27,6 +27,7 @@ $registro = new Registro();
 <!-- Bootstrap 4 -->
 <script src="../admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <style>
     /* Estilo del overlay del loader */
@@ -72,45 +73,40 @@ $registro = new Registro();
 
 </head>
 
-<script>
-
-function registrarUnidadAcademica(){
-
-let valor = document.getElementById('institucionSeleccionada').value; //obtenemos el valor del select
-
-console.log(valor);
-
-if(valor == "1"){ // si es igual a 4 que significa "otro"
-  document.getElementById('otraInstitucion').style.display = 'none';//si no lo volvemos a ocultar
-  document.getElementById('unidadAcademica').style.display = 'block'; //mostramos el id que contiene el input
-  
-}else if(valor == "2"){
-document.getElementById('unidadAcademica').style.display = 'none'; //mostramos el id que contiene el input
-document.getElementById('otraInstitucion').style.display = 'block';//si no lo volvemos a ocultar
-
-}else{
-  document.getElementById('unidadAcademica').style.display = 'none'; 
-  document.getElementById('otraInstitucion').style.display = 'none';
-}
-
-}
-</script>
-
-
 <body style="background-color:  #2439e6;">
 
-<div id="loader">
-    <img src="https://i.gifer.com/ZZ5H.gif" alt="Cargando..."> <br>
-    <p>  &nbsp; Cargando su información, por favor espere un momento, no cierre ni actualice esta ventana...</p>
-  </div>
+<?php
+$status = $_GET['status'] ?? '';
+?>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let status = "<?php echo $status; ?>";
+
+    if (status === "ok") {
+        Swal.fire({
+            icon: 'success',
+            title: 'Registro exitoso',
+            text: 'El equipo fue registrado correctamente',
+            timer: 2000,
+            showConfirmButton: false
+        });
+    }
+
+    if (status === "error") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Ocurrió un problema',
+        });
+    }
+});
+</script>
 
 <div class="container-fluid">
         <div class="row">
           <div class="col" >
 
-          
-
-        
           <div  style="width:90%; margin-left:5%; background-color: white; padding:20px; border-radius:10px;">
 
           <img src="../admin/assets/img/banner1.jpg" style="width: 100%;" alt="CECYBOT 2025">
@@ -118,35 +114,8 @@ document.getElementById('otraInstitucion').style.display = 'block';//si no lo vo
           <h2 class="text-center">REGISTRO DE EQUIPOS</h2> <br>
 
          
-<div>
-<p> <span class="font-weight-bold"> Datos de pago: </span></p>
-
-<p><strong>Banco:</strong> BBVA Bancomer</p>
-
-<p><strong>No. de cuenta:</strong>  010 823 4469 </p>
-
-<p><strong>CLABE Interbancaria:</strong>  0122 1500 1082 3446 92 </p>
-
-<p> <strong>Nombre del destinatario:</strong> CAJA POPULAR DR. JOSE MA. LUIS MORA SC DE RL DE CV</p>
-
-<p> <span style="color: red; font-weight: bold;"> * Importante: </span> En el concepto o motivo de pago favor de colocar el <strong>"Nombre de tu equipo"</strong>  que con el que será registrado.</p>
-
- <p> </p>
-
- <table>
-        <tr>
-            <th><span class="font-weight-bold">Cuota de Inscripción: </span></th>
-           
-        </tr>
-        <tr>
-            <td>$250.00 MXN</td> 
-        </tr>
-        
-    </table>
-</div>
-      <hr>
           
-            <form action="../lib/verificar_inscripcion.php" method="post" id="formQR">
+            <form action="../registro/lib/verificar_registro.php" method="post" id="formQR">
 
             
            

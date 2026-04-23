@@ -6,6 +6,10 @@ $generator = new barcode_generator();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
+/* $isLocal = ($_SERVER['SERVER_NAME'] === 'localhost' || $_SERVER['SERVER_NAME'] === '127.0.0.1');
+if ($isLocal) {
+    $captchaValido = true;
+} else { */
 
 $secretKey = "6LdwAJUsAAAAAMRtxHJO_jUBluxzbyu73BNqK0oX";
 $responseKey = $_POST['g-recaptcha-response'];
@@ -20,8 +24,8 @@ $response = json_decode($verify);
 if (!$response->success) {
     die("Por favor verifica que no eres un robot.");
 }
-
-
+//}
+    
 
 $nombre_equipo = (isset($_POST['nombre_equipo'])) ? $_POST['nombre_equipo'] : null;
 $url_imagen1 = (isset($_REQUEST['url_imagen1'])) ? $_REQUEST['url_imagen1'] : null;  
