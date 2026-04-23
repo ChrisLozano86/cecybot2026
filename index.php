@@ -155,13 +155,13 @@
     <span>Facebook</span>
 </a>
 
-    <a href="https://www.instagram.com/TU_USUARIO" target="_blank" class="panel-item">
+    <a href="https://www.instagram.com/cecytecomonfort/" target="_blank" class="panel-item">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
         <span>Instagram</span>
     </a>
 
     <a href="https://www.tiktok.com/@TU_USUARIO" target="_blank" class="panel-item">
-        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+        <img src="https://www.tiktok.com/@cecyte.comonfort">
         <span>TikTok</span>
     </a>
 
