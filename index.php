@@ -160,8 +160,8 @@
         <span>Instagram</span>
     </a>
 
-    <a href="https://www.tiktok.com/@TU_USUARIO" target="_blank" class="panel-item">
-        <img src="https://www.tiktok.com/@cecyte.comonfort">
+    <a href="https://www.tiktok.com/@cecyte.comonfort" target="_blank" class="panel-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
         <span>TikTok</span>
     </a>
 
