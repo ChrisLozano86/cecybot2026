@@ -314,5 +314,4 @@ class Registro {
         $conexion = null;
     }
 
-
 }

@@ -16,6 +16,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="admin/assets/css/social_bar.css">
+    <!-- Font Awesome Icons -->
+     <link rel="stylesheet" href="admin/assets/plugins/fontawesome-free/css/all.min.css">
     <link rel="icon" href="admin/assets/img/favicon.ico" type="image/x-icon">
     
     <style>
@@ -98,16 +100,64 @@
   </head>
   
   <body>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const modal = document.getElementById('imageModal');
+    const video = document.getElementById('videoPublicidad');
+    const btn = document.getElementById('btnPlay');
+
+    // Evita autoplay
+    modal.addEventListener('shown.bs.modal', function () {
+        video.pause();
+        video.currentTime = 0;
+    });
+
+    // Iniciar con sonido al hacer clic
+    btn.addEventListener('click', function () {
+        video.muted = false;
+        video.volume = 1;
+        video.play();
+
+        btn.style.display = 'none'; // ocultar botón
+    });
+
+    // Reset al cerrar
+    modal.addEventListener('hidden.bs.modal', function () {
+        video.pause();
+        video.currentTime = 0;
+        video.muted = true;
+        btn.style.display = 'block';
+    });
+
+    // Cerrar modal al terminar
+    video.addEventListener('ended', function () {
+        const modalInstance = bootstrap.Modal.getInstance(modal);
+        modalInstance.hide();
+    });
+
+});
+  </script>
     <!-- Modal -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">¿Estás listo para reto? </h5>
+                    <h5 class="modal-title" id="imageModalLabel"> <i class="fas fa-rocket"></i> &nbsp; ¿Estás listo para reto? </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="admin/assets/img/cartel_cecybot.jpg" class="img-fluid" alt="Cartel CECYBOT 2025">
+
+                <button id="btnPlay" class="btn btn-primary btn-lg mt-3">
+              <span> <i class="fas fa-volume-up"></i> &nbsp; <i class="fas fa-play"></i> &nbsp;Reproducir con sonido</span>
+                </button>
+                 <video id="videoPublicidad" width="100%" playsinline>
+    <source src="admin/assets/video/cecybot.mp4" type="video/mp4">
+  </video>
+
+  
+
                 </div>
             </div>
         </div>
@@ -155,7 +205,7 @@
     <span>Facebook</span>
 </a>
 
-    <a href="https://www.instagram.com/cecytecomonfort/" target="_blank" class="panel-item">
+    <a href="https://www.instagram.com/cecybot_oficial/" target="_blank" class="panel-item">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
         <span>Instagram</span>
     </a>

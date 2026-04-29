@@ -117,6 +117,13 @@ if($_SESSION['idRol']== null){
                   <p>Registros de equipos</p>
                 </a>
               </li>
+
+              <li class="nav-item">
+                <a href="modules/verificar/index.php" class="nav-link">
+                  <i class="far fa-image"></i>
+                  <p>Mesa de registro</p>
+                </a>
+              </li>
                  
             </ul>
           </li>

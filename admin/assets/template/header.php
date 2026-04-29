@@ -29,6 +29,8 @@ if($_SESSION['idRol']== null){
    <link rel="stylesheet" href="../../assets/css/style.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -102,6 +104,13 @@ if($_SESSION['idRol']== null){
               <a href="../registros/index.php" class="nav-link">
                   <i class="far fa-image"></i>
                   <p>Registro de equipos</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../verificar/index.php" class="nav-link">
+                  <i class="far fa-image"></i>
+                  <p>Mesa de registro</p>
                 </a>
               </li>
                  

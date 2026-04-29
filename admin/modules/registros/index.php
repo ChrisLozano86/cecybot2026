@@ -51,7 +51,7 @@ include_once '../../assets/template/header.php';
       <th scope="col">Comprobante Pago</th>
       <th scope="col">Fecha de registro</th>
       <th scope="col">Comprobante de registro QR</th>
-      <th scope="col">Ver detalles</th>
+      <th scope="col">Editar registro</th>
       <?php if (isset($_SESSION['idRol']) && $_SESSION['idRol'] == 1) {?>
       <th scope="col">Eliminar</th>
       <?php } ?>
