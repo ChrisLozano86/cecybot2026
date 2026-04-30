@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
            
             <div class="form-group">
             <!-- <label for="titulo">Escanea el código QR <span class="text text-danger">*</span></label> -->
-            <input  class="hidden-input-qr" type="text" id="qrInput" name="qr" autofocus autocomplete="off">
+            <input  class="form-control" placeholder="Escanea el código QR" type="text" id="qrInput" name="qr" autofocus autocomplete="off">
             </div>
 
            
