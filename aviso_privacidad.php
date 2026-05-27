@@ -174,7 +174,7 @@
          <h2> AVISO DE PRIVACIDAD INTEGRAL</h2>
 <strong>Registro de Equipos — Torneo de Robótica CECYBOT2026</strong>
 
-<p>El Comité Organizador de CECYBOT2026, con domicilio para oír y recibir notificaciones en [DOMICILIO OFICIAL DE LA INSTITUCIÓN], es responsable del tratamiento de los datos personales que se recaben a través del sitio web oficial CECYBOT2026, los cuales serán protegidos conforme a lo dispuesto por la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y demás normatividad aplicable.</p>
+<p>El Comité Organizador de CECYBOT2026, con domicilio para oír y recibir notificaciones en Colegio de Estudios Científicos y Tecnológicos del Estado de Guanajuato Unidad Académica Comonfort,  Salida a Celaya No. 46, Comonfort Centro, Mexico, 38200, , es responsable del tratamiento de los datos personales que se recaben a través del sitio web oficial CECYBOT2026, los cuales serán protegidos conforme a lo dispuesto por la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y demás normatividad aplicable.</p>
 
 <h3>Datos personales recabados</h3>
 
