@@ -99,6 +99,14 @@ document.getElementById('otraInstitucion').style.display = 'block';//si no lo vo
 
 <body style="background-color:  #2439e6;">
 
+<?php 
+$inscripcionesAbiertas = true; 
+if (!$inscripcionesAbiertas) {
+    header("Location: ../index.php");
+    exit();
+}
+?>
+
 <div id="loader">
     <img src="https://i.gifer.com/ZZ5H.gif" alt="Cargando..."> <br>
     <p>  &nbsp; Cargando su información, por favor espere un momento, no cierre ni actualice esta ventana...</p>

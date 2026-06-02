@@ -76,6 +76,13 @@ document.addEventListener("DOMContentLoaded", function() {
             </form>
             <p> Si el equipo no tiene QR, puedes verificarlo manualmente dando click en el siguiente botón: </p>
             <a href="search_qr.php" class="btn btn-primary"> Verficar equipo sin escanear QR </a>
+            <br>
+            <hr>
+            <a href="report_category.php" class="btn btn-secondary">
+            Generar Reporte de Asistencia
+            </a>
+            
+            
 
          
 <script>
@@ -119,6 +126,9 @@ function procesarYEnviar() {
     form.submit();
 }
 </script> 
+
+
+    
 
               
             

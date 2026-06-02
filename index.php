@@ -277,7 +277,16 @@ document.addEventListener('DOMContentLoaded', function () {
       <section class="hero-section">
         <h2>¿Estás listo para el reto?</h2>
         <img src="admin/assets/img/logo.png" alt="CECYBOT 2026" style="width: 20%;">
-        <a href="registro/index.php" class="btn btn-primary btn-lg" style="margin-top: 20px; margin-bottom: 20px;">¡REGISTRAR TU EQUIPO!</a>
+
+        <?php
+        $inscripcionesAbiertas = true; // Cambia a false para cerrar inscripciones
+        if ($inscripcionesAbiertas) {
+            echo '<a href="registro/index.php" class="btn btn-primary btn-lg mt-3">¡REGISTRAR TU EQUIPO!</a>';
+        } else {
+            echo '<p class="text-danger fw-bold mt-3">El periodo de inscripciones ha finalizado, ¡Te esperamos el 05 de junio de 2026! </p>';
+        }
+        ?>
+      
         <br>
      <a href="#" class="btn btn-warning btn-la" data-bs-toggle="modal" data-bs-target="#modalRecuperar">RECUPERAR COMPROBANTE DE REGISTRO</a>
       </section>

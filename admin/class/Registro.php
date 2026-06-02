@@ -314,4 +314,28 @@ class Registro {
         $conexion = null;
     }
 
+ public static function recuperarTodosVerificados() {
+        $conexion = new Conexion();
+        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA. ' ORDER BY id ASC');
+        $consulta->execute();
+        $registros = $consulta->fetchAll();
+  
+        $conexion = null;
+        return $registros;
+    }
+
+
+
+public static function recuperarCategoriaVerificados($categoria) {
+        $conexion = new Conexion();
+        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA . ' WHERE categoria = :categoria');
+        $consulta->bindParam(':categoria', $categoria);
+        $consulta->execute();
+        $registros = $consulta->fetchAll();
+  
+        $conexion = null;
+        return $registros;
+    }
+
+
 }
