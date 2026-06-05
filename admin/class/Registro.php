@@ -316,7 +316,7 @@ class Registro {
 
  public static function recuperarTodosVerificados() {
         $conexion = new Conexion();
-        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA. ' ORDER BY id ASC');
+        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA. ' WHERE verificado = 1 ORDER BY id ASC');
         $consulta->execute();
         $registros = $consulta->fetchAll();
   
@@ -328,7 +328,7 @@ class Registro {
 
 public static function recuperarCategoriaVerificados($categoria) {
         $conexion = new Conexion();
-        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA . ' WHERE categoria = :categoria');
+        $consulta = $conexion->prepare('SELECT * FROM ' . self::TABLA . ' WHERE categoria = :categoria AND verificado = 1');
         $consulta->bindParam(':categoria', $categoria);
         $consulta->execute();
         $registros = $consulta->fetchAll();

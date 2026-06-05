@@ -28,7 +28,7 @@ $registros = Registro::recuperarTodos();
       <th scope="col">Instituci&oacute;n</th>
       <th scope="col">Email</th>
       <th scope="col">Tel&eacute;fono</th>
-      
+      <th scope="col">Asistencia</th>
       
     </tr>
   </thead>
@@ -48,6 +48,7 @@ $registros = Registro::recuperarTodos();
       <td><?php echo $item['institucion']; ?></td>
       <td><?php echo $item['email']; ?></td>
       <td><?php echo $item['tel']; ?></td>
+      <td><?php echo $item['verificado']; ?></td>
       
     </tr>
     <?php endforeach; ?>
